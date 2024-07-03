@@ -4,7 +4,7 @@ This is the repo for the QML Integration Basics course on Qt Academy.
 
 ## Getting Started
 
-The files provided are the the demo apps created during the course. They provide a reference for the workflows covered in the course section.
+The files provided are the demo apps created during the course. They provide a reference for the workflows covered in the course section.
 
 ## Instructions
 
