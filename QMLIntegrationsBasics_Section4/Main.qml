@@ -11,7 +11,7 @@ ApplicationWindow {
 
     footer: Button {
         text: qsTr("Call Q_INVOKABLE method to reset ellipse's properties")
-        onClicked: function() {
+        onClicked: {
             slider.value = 25
             ellipse.setProperties(slider.value, "blue")
         }
@@ -23,7 +23,7 @@ ApplicationWindow {
         Button {
             width: parent.width
             text: qsTr("Select ellipse's color")
-            onClicked: function() { colorDialog.open() }
+            onClicked: { colorDialog.open() }
         }
 
         Label {
@@ -50,13 +50,13 @@ ApplicationWindow {
         color: "blue"
         border: slider.value
 
-        onColorChanged: function() { ellipseInfo() }
+        onColorChanged: { ellipseInfo() }
     }
 
     ColorDialog {
         id: colorDialog
 
         selectedColor: ellipse.color
-        onAccepted: ellipse.color = selectedColor
+        onAccepted: { ellipse.color = selectedColor }
     }
 }
